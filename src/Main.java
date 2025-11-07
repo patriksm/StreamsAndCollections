@@ -34,5 +34,11 @@ public class Main {
                 filter(e -> e >= 90).
                 map(e -> e + 12).
                 forEach(e -> System.out.print(e + " "));
+        System.out.println();
+
+        int[] data = {1, 2, 3, 4, 5, 6, 7};
+        Stream<Integer> myDataStream = Arrays.stream(data).boxed();
+        int sum = myDataStream.reduce(0, (a, b) -> a + b);
+        System.out.println("Sum is: " + sum);
     }
 }
