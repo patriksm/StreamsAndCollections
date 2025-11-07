@@ -18,6 +18,6 @@ public class Main {
         System.out.println(myList);
         Stream myStream = myList.stream();
         System.out.println(myStream);
-        myStream.forEach(System.out::print);
+        myStream.map(e -> e + " ").forEach(System.out::print);
     }
 }
