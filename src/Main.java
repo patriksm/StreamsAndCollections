@@ -18,6 +18,9 @@ public class Main {
         System.out.println(myList);
         Stream myStream = myList.stream();
         System.out.println(myStream);
-        myStream.map(e -> e + " ").forEach(System.out::print);
+        myStream.
+//                filter(obj -> obj.equals("One")).
+                map(e -> e + " ").
+                forEach(System.out::print);
     }
 }
